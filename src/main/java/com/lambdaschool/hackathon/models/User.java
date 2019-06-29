@@ -92,7 +92,7 @@ public class User extends Auditable
     {
         this.userRoles = userRoles;
     }
-    
+
     public List<SimpleGrantedAuthority> getAuthority()
     {
         List<SimpleGrantedAuthority> rtnList = new ArrayList<>();
