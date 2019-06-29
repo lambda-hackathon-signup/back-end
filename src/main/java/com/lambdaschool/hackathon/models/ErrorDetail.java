@@ -1,7 +1,8 @@
 package com.lambdaschool.hackathon.models;
 
 
-import com.lambdaschool.starthere.exceptions.ValidationError;
+
+import com.lambdaschool.hackathon.exceptions.ValidationError;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
