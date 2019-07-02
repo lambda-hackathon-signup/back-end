@@ -32,6 +32,11 @@ public class User extends Auditable
     @JsonIgnoreProperties("user")
     private List<UserRoles> userRoles = new ArrayList<>();
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "projectid")
+    @JsonIgnoreProperties({"users","hibernateLazyInitializer"})
+    private Project project;
+
     public User()
     {
     }
